@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bd-navbar sticky-top">
+    <div class="container-xxl bd-gutter d-flex align-items-center">
+        <img class="navbar-brand" src="images/Asset 1.png" alt="Logo">
+
+        <!-- Spacer for Flexbox Alignment -->
+        <!-- <div class="flex-grow-1"></div> -->
+
+        <!-- Search Icon and Toggler Group -->
+        <div class="d-flex align-items-center ms-auto">
+            <!-- Search form for smaller screen only -->
+            <a href="#" class="d-lg-none me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zm-5.742-4.844a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11z" />
+                </svg>
+            </a>
+
+            <!-- Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BootStrap</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+
+
+            <div class="offcanvas-body">
+                <!--NAVBAR ITEMS  START-->
+                
+                <!-- Left side nav bar list items-->
+                <ul class="navbar-nav flex-column flex-lg-row flex-wrap me-2 mb-lg-0">
+                    <!-- <ul class="navbar-nav flex-column flex-lg-row flex-wrap me-auto mb-lg-0"> -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Docs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Examples</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Icons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Themes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                </ul>
+
+                <!-- Search form for larger screen only -->
+                <form class="d-none me-auto ms-auto d-lg-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <!-- Right-side Navbar List Items -->
+                <ul class="navbar-nav flex-column flex-lg-row flex-wrap ms-auto mb-2 mb-lg-0">
+                    <!-- ICON LINKS START -->
+                    <li class="nav-item my-auto">
+                        <a class="icon-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="color: white;" width="16" height="16" class="bi bi-github">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                            </svg>
+                            <span class="d-none d-sm-inline d-lg-none"> github</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item my-auto">
+                        <a class="icon-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg"  style="color: white;" width="16" height="16" fill="currentColor" class="bi bi-twitter">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                            </svg>
+                            <span class="d-none d-sm-inline d-lg-none"> Twitter</span>
+                        </a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="icon-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="color: white;" width="16" height="16" class="bi bi-opencollective">
+                                <path fill-opacity=".4"
+                                    d="M12.995 8.195c0 .937-.312 1.912-.78 2.693l1.99 1.99c.976-1.327 1.6-2.966 1.6-4.683 0-1.795-.624-3.434-1.561-4.76l-2.068 2.028c.468.781.78 1.679.78 2.732z" />
+                                <path
+                                    d="M8 13.151a4.995 4.995 0 1 1 0-9.99c1.015 0 1.951.273 2.732.82l1.95-2.03a7.805 7.805 0 1 0 .04 12.449l-1.951-2.03a5.07 5.07 0 0 1-2.732.781z" />
+                            </svg>
+                            <span class="d-none d-sm-inline d-lg-none"> Open Collective</span>
+                        </a>
+                    </li>
+
+                    <!-- NAVBAR ITEMS LINKS END -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<body>
+
+    <!-- HERO SECTION -->
+    <div class="main">
+        <div class="text-center d-flex px-4 py-4">
+            <div id="hero-wrapper" class="col-1 justify-content-center flex-column container">
+                <!-- <div id="hero-btn-top"
+                    class="row rounded-5 d-sm-inline-flex align-items-center gap-1 pt-3 px-3 me-2 mb-2 mb-lg-0">
+                    <p>Get Security Updates for Bootstrap 3 & 4 →</p>
+                </div> -->
+                <div id="hero-btn-top">
+                    <p>Get Security Updates for Bootstrap 3 & 4 →</p>
+                <svg class="arrow">
+                    <use xlink:href="#arrow-right-short"></use>
+                </svg>
+            </div>
+
+
+                <img class="hero-image" src="images/hero-image.png" alt="Bootstrap">
+                <h1 id="big-txt-hero" class="display-5 fw-bold mx-0 px-0">Build fast, responsive sites with Bootstrap</h1>
+                <p id="small-txt-hero">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize
+                    prebuilt grid system
+                    and components, and bring projects to life with powerful JavaScript plugins.</p>
+                <button class="hero-btn-bttm">Read the docs</button>
+                <span class="hero-bttm-links">
+                <a href="">Download</a>
+                ·
+                <a href="">All releases</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

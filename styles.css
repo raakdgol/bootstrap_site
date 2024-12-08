@@ -1,0 +1,180 @@
+/* .logo {
+    width: 20px;
+    height: 20px;
+    transform: translateZ(0);
+}
+
+
+.logo:hover {
+    transform: scale(1.5) rotate(-20deg);
+}
+
+
+/* .logo:hover {
+    transform: rotateY(15deg) translateZ(10px);
+    transition: transform 0.5s ease;
+    transition: transform 0.5s;
+    transform: scale(1.5) rotateX(-15deg) translateZ(50px);   
+} */ 
+
+.navbar-brand:hover {
+    transition: transform 0.5s;
+    transform:  translateY(3px);
+}
+
+.navbar {
+    background-color: rgb(112, 44, 249);
+    height: 64px;
+}
+
+.navbar-brand {
+    /* height: 40px;
+    width: 50px; */
+    height: fit-content;
+    width: 50px;
+    padding: 4px 0px;
+    will-change: transform, transition;
+}
+
+/* .container-fluid {
+    height: 64px;
+} */
+
+
+
+body {
+    background-image: linear-gradient(180deg, rgba(33, 37, 41, 0.01), rgba(33, 37, 41, 1) 85%),
+        radial-gradient(ellipse at top left, rgba(110, 168, 254, 0.5), transparent 50%),
+        radial-gradient(ellipse at top right, rgba(255, 218, 106, 0.5), transparent 50%),
+        radial-gradient(ellipse at center right, rgba(112, 44, 249, 0.5), transparent 50%),
+        radial-gradient(ellipse at center left, rgba(214, 51, 132, 0.5), transparent 50%);
+}
+
+
+.main {
+    padding-top: 0;
+    height: 1200px;
+   
+    /* width: 100%; */
+}
+
+#hero-wrapper {
+    /* width: 600px; */
+    width: 790px;
+    height: 718px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.hero-image {
+    width: 225px;
+    height: 225px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+
+#hero-btn-top {
+    background-color: #FFE484;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 2px 2px;
+    text-align: center;
+    width: 350px;
+    height: 30px;
+
+}
+
+.hero-btn-bttm {
+    background-color: #712CF9;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 7px;
+    padding: 2px 2px;
+    text-align: center;
+    width: 224px;
+    height: 64px;
+    margin-bottom: 15px;
+}
+
+#small-txt-hero {
+    font-weight: 400;
+    font-size: calc(1.275rem + .3vw);
+}
+
+#big-txt-hero {
+    font-size: 63px;
+}
+
+.hero-bttm-links a {
+    color: white;
+    font-size: 16px;
+}
+
+
+
+/* smaller search form */
+.navbar .bi-search {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.navbar-toggler {
+    text-decoration: none;
+    border-radius: none;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* remove top and left margin from collapsed content
+#navbarSupportedContent {
+    color: yellow;
+    text-decoration: line-through;
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+}
+
+.collapse {
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+} */
+
+
+
+/* OFFCANVAS toggle box syling */
+.offcanvas {
+    background-color: rgb(112, 44, 249);
+    /* Adjust background color */
+}
+
+.offcanvas .nav-link {
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #ddd;
+}
+
+
+ /* .bi-github {
+     width: 32px;
+     height: 32px;
+ } */
+
+ .navbar-nav .nav-item {
+     margin-left: 15px; /* Adds space to the left of each <li> */
+ }
